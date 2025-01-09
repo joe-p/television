@@ -3,15 +3,15 @@ use color_eyre::Result;
 use rustc_hash::FxHashSet;
 use television_derive::{Broadcast, ToCliChannel, ToUnitChannel};
 
-mod alias;
-mod cable;
-mod dirs;
-mod env;
-mod files;
-mod git_repos;
+pub mod alias;
+pub mod cable;
+pub mod dirs;
+pub mod env;
+pub mod files;
+pub mod git_repos;
 pub mod remote_control;
 pub mod stdin;
-mod text;
+pub mod text;
 
 /// The interface that all television channels must implement.
 ///
